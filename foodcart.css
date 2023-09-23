@@ -1,0 +1,315 @@
+body{
+  background:linear-gradient(90deg,rgba(2,0,36,1)0%,rgba(32,32,152,1)29%,rgba(0,212,255,1)79%);
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+
+  position: fixed;
+  top:0;
+  left: 0;
+  width:100%;
+  z-index: 99;
+   background-color:#ff4757;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav{
+
+max-width: 1200px;
+   margin: auto;
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+}
+.box{
+
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  
+}
+
+.cartcount{
+  position:absolute;
+   background-color: rgb(231, 228, 12);
+margin-left:10px;
+border-radius:5px;
+width: 20px;
+height: auto;
+text-align: center;
+color: black;
+
+
+
+}
+
+#cartbut{
+
+cursor: pointer;
+
+margin-top: 10px;
+background-color: rgb(0, 0, 0);
+border-radius:10px;
+color: white;
+border: solid white;
+width:70px;
+text-align: start;
+padding: 2px;
+}
+img{
+
+  width:100%;
+
+}
+.shopcontent{
+
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px ,auto));
+ justify-content: center;
+align-items: center;
+
+ 
+gap: 1rem;
+
+}
+.container{
+
+  max-width:1000px;
+  padding: 4rem;
+  margin: auto;
+  width: 100%;
+ }
+
+h2.title{
+font-size: 1.1rem;
+font-weight: 500;
+margin-bottom:1.5rem ;
+color: rgb(0, 0, 0);
+background-color:chartreuse;
+height: 30px;
+padding: 5px;
+border-radius: 5px;
+border: solid rgb(0, 0, 0) 3px;
+text-align: start;
+padding:5px;
+
+
+}
+
+.foodbox{
+
+  background-color:rgb(243, 243, 243) ;
+  padding:10px;
+  box-shadow:0 1px 4px rgba(40,37,0.1);
+  border-radius: 3px;
+
+}
+.pic{
+
+overflow: hidden;
+object-fit: cover;
+aspect-ratio:0.5/0.5;
+}
+.pic:hover img{
+
+transform: scale(1.5);
+
+}
+.fooimg{
+
+  transition: 0.3s;
+ 
+  object-fit: conver;
+}
+.foodtitle{
+
+font-size: 1rem;
+font-weight: 600;
+color: #ff6348;
+
+
+
+}
+.foodprice{
+
+  font-weight: 500;
+}
+#cartbut1{
+margin-left:30px;
+background-color: green;
+color: white;
+padding:5px ;
+border: solid white;
+border-radius:5px;
+cursor:pointer;
+  transition: 0.3s; 
+
+  
+}
+#cartbut1:hover{
+
+  background-color:red;
+border: solid black;
+ 
+}
+ 
+.cart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100vh;
+  overflow-y:auto ;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 1px 4px rgba(40,37,37,0.1);
+  z-index: 100;
+
+}
+ .cartactive{
+  right: 0;
+  transition: 0.5s;
+ }
+
+ .carttitle{
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+ }
+  .cartbox{
+
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+  }
+
+  .cartimg{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border: 2px solid rgba(0,0,0,0.1) ;
+    padding:5px ;
+  }
+
+
+.detailbox{
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+
+.pricebox{
+  display: flex;
+  justify-content: space-around;
+}
+
+.cartquantity{
+
+  border: 1px solid rgba(0,0,0,0.1) ;
+outline: none;
+width: 2.4rem;
+text-align: center;
+font-size: 1rem;
+visibility: hidden;
+opacity: 1%;
+
+}
+
+
+#remove{
+ 
+  color: red;
+  margin-right:35px;
+  text-align: center;
+  padding: 1px;  
+}
+
+#cartclose{
+display: grid;
+
+border:white  2px solid;
+
+
+width:50px;
+margin-left: 250px;
+margin-top: -46px;
+border-radius: 10px;
+padding:5px;
+cursor: pointer;
+text-align:center;
+background-color: black;
+color:white;
+
+}
+#cartclose:hover{
+
+border: solid 2px red;
+
+}
+.total{
+
+
+text-align: end;
+display: grid;
+
+
+}
+
+
+.placebtn{
+color: white;
+  background-color:green;
+width: 100px;
+padding: 5px;
+border-radius:5px;
+border:solid black 2px;
+
+margin-left: 100px;
+margin-top:10px;
+
+}
+
+.cartclosebtn{
+
+  visibility:hidden;
+
+
+}
+.placebtn1{
+
+
+  visibility: hidden;
+}
+
+.cartqty{
+
+  width: 30px;
+  visibility: hidden;
+}
+.cartprice{
+
+  margin-left: -10px;
+}
+.cartfood{
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff6348;
+   
+  
+}
+.contactinfo{
+
+  margin-top: 100px;
+}
